@@ -1,0 +1,25 @@
+<body>
+    <app-scrolling></app-scrolling> 
+<h1>Choisir le métier fait pour moi <a href="https://group.bnpparibas/emploi-carriere/metiers"><button>Voir tous les métiers</button></a></h1>
+<h3 style="width: 50%;">Quels que soient votre profil et votre ambition, il y a forcément un métier fait pour vous chez BNP Paribas.</h3>
+<div id="cards" #widgetsContent>
+    <div *ngFor="let work of works">
+   <a style="text-decoration: none;" href="{{work.link}}"> <div  class="card">
+        <div class="card-top"><img src="{{work.image}}" alt="{{work.name}}"></div>
+        <div class="card-bottom"><div class="bottom-title">{{work.name}}</div>
+        <div class="hidden-bottom"><div>{{work.comment}}</div><a href="{{work.link}}" ><div class="link">Découvrir les metiers</div></a></div></div>
+    </div>
+</a>
+    </div>
+    
+</div>
+<div>
+    <div style="font-size: 30px; margin: 15px;" class="fa fa-arrow-left" (click)="scrollLeft()"></div>
+    <div style="font-size: 30px; margin: 15px;" class="fa fa-arrow-right" (click)="scrollRight()"></div>
+</div>
+<div class="sentence">
+    <div class="sentence-front"><h1>En tant que candidat du Groupe BNP Paribas</h1>
+<h3 style="font-weight: 500;">Nous pouvons être amenés à traiter certaines de vos données personnelles. Une notice dédiée a été rédigée par BNP Paribas pour vous fournir des informations claires et détaillées sur la façon dont nous traitons les données vous concernant, les raisons pour lesquelles nous les utilisons, pendant combien de temps nous les conservons, quels sont vos droits et comment vous pouvez les exercer.</h3>
+<button>CONSULTER LA NOTICE DE PROTECTION DES DONNÉES PERSONNELLES</button></div>
+</div>
+</body>

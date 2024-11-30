@@ -1,0 +1,85 @@
+body{
+    background-image: radial-gradient(circle at 100% 100%, rgba(255, 199, 0, 0.15) 0px, rgba(3, 167, 118, 0.06) 20%, rgba(255, 199, 0, 0) 29%), radial-gradient(circle at 11% 101%, rgba(233, 163, 199, 0.3) 0px, rgba(245, 129, 80, 0.05) 24%, rgba(246, 126, 70, 0) 32%), linear-gradient(rgba(241, 243, 244, 0) 0px, rgba(241, 243, 244, 0.5));
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    text-align: center;
+    background-color: var(--my-font);
+}
+
+#cards{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    }
+     
+    
+    
+.card-ref{
+    text-decoration: none;
+    display: flex;
+    padding: 20px;
+}
+.card{
+    width: 350px;
+    }
+.card:hover .first-img{
+    display: none;
+    }
+.card:hover .second-img{
+    display: flex;
+    bottom: 0px;
+    left: 2px;
+    position: absolute;
+    height: 150%;
+    width: auto;
+    bottom: 0px; 
+    }
+    
+
+.card-top{
+    display: inline-block;
+    position: relative;    
+    height: 220px;
+    width: 350px;
+    background-image: radial-gradient(circle at 10% 100%, rgb(184, 48, 118) 9%, rgb(217, 112, 63) 70%, rgb(217, 146, 63) 100%);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin: 0px;
+}
+.card-bottom{
+    position: relative;
+    left: 0px;    
+    height: 70px;
+    background-color: var(--my-font);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    box-shadow: grey 0px 10px 10px 0px;
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 500;
+    justify-content: center;
+    display: flex;
+    color: var(--my-second);
+    
+}
+
+.first-img{
+    bottom: 0px;
+    left: 20px;
+    position: absolute;
+    height: 125%;
+    width: auto;
+    bottom: 0px;     
+}
+.second-img{
+   display: none;     
+}
+a:hover #anim-arrow{
+    transition:  0.4s;
+    translate:10px;
+}

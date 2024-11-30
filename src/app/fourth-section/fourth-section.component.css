@@ -1,0 +1,126 @@
+body{padding:5% ;}
+h1{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    padding: 10px;
+    border-radius: 30px;
+    background-color: transparent;
+    font-weight: bold;
+}
+button:hover{
+    background-color: var(--my-second);
+    color: var(--my-font);
+}
+
+#cards{
+    height: 350px;
+    display: flex;
+    overflow: hidden;    
+    scroll-behavior: smooth;
+    
+}
+#cards .card{
+    margin: 30px;
+    position: relative;
+    height: 290px;
+    width: 350px;
+}
+.card-top{
+    height: 68%;
+    width: 100%;
+}
+.card-bottom{
+    align-content: center;
+    justify-content: center;
+    height: 32%;
+    width: 100%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: var(--my-font);
+    box-shadow:  rgba(53, 43, 53, 0.1) 0px 10px 20px 10px;
+}
+img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+    height: auto;
+}
+.card:hover .card-bottom{
+    animation: move-me-up 0.4s;    
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: var(--my-font);
+    height: 70%;
+    box-shadow: rgb(207, 186, 190) 0px 10px 20px 10px;;
+}
+@keyframes move-me-up {
+    0% {
+        bottom: 0px;
+      height: 100px;
+      opacity: 0;
+    }
+   
+    100% {
+      /* height: 250px; */
+      bottom: 0px;
+    }
+  }
+.card:hover .card-top{
+    height: 30%;
+}
+.hidden-bottom{
+    display: none;
+}
+.card:hover .hidden-bottom{
+    display: inline;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    color: var(--my-second);
+}
+.bottom-title{
+    font-size: 24px;
+    font-weight: 500;
+    padding-right:  20px;
+    padding-left: 20px;
+    margin: 0px;
+    text-align: center;
+    color: var(--my-second);
+}
+.link{
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+.sentence{
+    background-image:radial-gradient(circle at 10% 100%, rgb(184, 48, 118) 9%, rgb(217, 112, 63) 70%, rgb(217, 146, 63) 100%);
+    padding: 3px;
+    border-radius: 30px;
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+}
+.sentence-front{
+    background-image: radial-gradient(circle at 100% 100%, rgba(255, 199, 0, .15) 0, rgba(3, 167, 118, .06) 20%, rgba(255, 199, 0, 0) 29%), radial-gradient(circle at 11% 101%, rgba(233, 163, 199, .3) 0, rgba(245, 129, 80, .05) 24%, rgba(246, 126, 70, 0) 32%), linear-gradient(180deg, rgba(241, 243, 244, 0) 0, rgba(241, 243, 244, .5));
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
+    background-color: var(--my-font);
+}
+.sentence button{
+    font-size: 10px;
+    background-color: var(--my-second);
+    color: var(--my-font);
+}
+.sentence button:hover{
+    background-color: var(--my-font);
+    color: var(--my-second);
+}

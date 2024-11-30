@@ -1,0 +1,55 @@
+body{    
+   background-image :radial-gradient(circle at -3% 29%, rgba(255, 199, 0, .31), rgba(3, 167, 118, .04) 9%, rgba(255, 199, 0, 0) 19%), radial-gradient(circle at 11% 101%, rgba(233, 163, 199, .3) 0, rgba(245, 129, 80, .05) 25%, rgba(246, 126, 70, 0) 34%), linear-gradient(180deg, #f1f3f4, #f1f3f4);
+   padding-left: 10%;
+   padding-right: 10%;
+   padding-top: 5%;
+   padding-bottom: 5%;
+}
+.card{
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* min-width: 350px; */
+    max-width: 350px;
+    border-radius: 15px;
+    box-shadow: #352b351a 0px 10px 20px 10px;
+    margin: 10px;
+    display: inline-block;
+    color: var(--my-second);
+}
+.card:hover{
+    box-shadow: rgba(53, 43, 53, 0.1) 10px 20px 20px 20px;
+}
+img{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: 0px;
+}
+.card-bottom{
+    margin: 0px;
+    height: 200px;
+    background-color: var(--my-font);
+    padding: 40px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.point{
+    border-radius: 5px;
+    height: 8px;
+    width: 8px;
+    background-color: var(--my-third);
+}
+a{text-decoration: none;}
+button{
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: transparent;
+    color: var(--my-second);
+    border-radius: 30px;    
+}
+button:hover{    
+    background-color: var(--my-second);
+    color: var(--my-font);    
+}

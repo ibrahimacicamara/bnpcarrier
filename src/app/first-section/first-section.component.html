@@ -1,0 +1,99 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>  
+<div id="body">
+  <app-scrolling></app-scrolling>
+<header>
+  <nav style="margin: 0px;">
+    <a  href="https://www.facebook.com/mabanque.bnpparibas" class="fa fa-facebook"></a>
+    <a  href="https://www.instagram.com/bnpparibas/" class="fa fa-instagram"></a>
+    <a  href="https://x.com/BNPParibas" class="fa fa-twitter"></a>
+    <a  href="https://www.linkedin.com/company/bnp-paribas" class="fa fa-linkedin"></a>
+    <a  href="https://www.youtube.com/user/BNPParibas" class="fa fa-youtube"></a>
+  </nav>
+
+  <nav style="margin: 0px;">
+    <a href="https://group.bnpparibas/decouvrez-le-groupe/bnp-paribas-dans-le-monde" class="link">BNP Paribas dans le monde</a>
+    <a href="https://mabanque.bnpparibas/" class="link">Accès à mes comptes</a>  
+    <a href="https://group.bnpparibas/contacts" class="link">Contacts</a>
+  </nav>
+  <div #mybar style="width: 100%;">
+    <div #bar style="width: 100%;">
+  <app-bar style="width: 100%;" ></app-bar></div></div>
+</header>
+<div id="main">  
+  <div style="padding-top: 20px;">
+    <a href="https://group.bnpparibas/" class="link-small" style="font-size: 11px;font-weight: 600;padding-right: 10px;">Acceuil</a>
+    <span style="padding-right: 10px;">|</span>
+    <a href="https://group.bnpparibas/emploi-carriere/toutes-offres-emploi" class="link-small" style="font-size: 11px;font-weight: 600;padding-right: 10px;">Nos offres d'emploi</a>
+  </div>
+  <div class="word">
+  <div style="font-weight: 600;">EMPLOI & CARRIERE</div>
+  <div class="title">ENVIE DE PRENDRE PART AU CHANGEMENT ?</div>
+  <div class="subtitle">Vous êtes au bon endroit. Notre ambition ? Construire un futur durable pour nos clientes et clients, comme pour nos équipes. Et cela n’est possible qu’avec vous !</div>
+  </div>
+  <div style="position: unset;padding-left: 5%;padding-right: 5%;">
+  <div id="bar2">
+    <div class="field">mon profil<span class="fa fa-sort-down" style="font-size: 30px; padding: 15px;"></span>
+    <div class="hidden">
+      <h2 style="text-transform: none; width: 100%;">Envie d’informations personnalisées ?</h2>
+      <h3 style="text-transform: none;font-weight: 500;">Rien de plus simple ! Choisissez votre profil et pensez à autoriser les cookies pour une expérience adaptée.</h3>
+      <div class="buttons">
+        <a href="https://group.bnpparibas/emploi-carriere/candidat-etudiant"><div  class="button1">Je fais des études</div></a>
+        <a href="https://group.bnpparibas/emploi-carriere/candidat-jeune-professionnel"><div  class="button1">Je démarre ma vie professionnelle</div></a>
+        <a href="https://group.bnpparibas/emploi-carriere/candidat-experimente"><div  class="button1">J’ai plusieurs années d’expérience</div></a>
+      </div>
+    </div>
+    </div>
+    <div class="field">Découvrir les métiers<span class="fa fa-sort-down" style="font-size: 30px; padding: 15px;"></span>
+      <div class="hidden">
+        <h2 style="text-transform: none; width: 100%;">Choisir le métier fait pour moi</h2>
+        <h3 style="text-transform: none;font-weight: 500;">Quels que soient votre profil et votre projet professionnel, il y a forcément un métier chez BNP Paribas dans lequel vous pourrez vous épanouir et acquérir de nouvelles compétences.</h3>
+        <div id="hiddens-end" style="display: flex; justify-content: space-around; width: 100%;">
+          <div *ngFor='let work of images' style="display: flex;">
+          <a href="{{work.link}}">
+            <div class="hidden-end" >
+            <img class="hidden-image" src="{{work.image}}">
+              <div class="rapport">{{work.name}}
+              </div>
+            </div> 
+          </a></div>
+        </div>
+        <div class="buttons">
+          <div *ngFor="let work of buttons">
+         <a href="{{work.link}}"> <div  class="button1" style="padding: 20px;margin-right: 10px;">{{work.name}}</div></a></div>
+          <!-- <div  class="button1">Consulting et Transformation</div>
+          <div  class="button1">Finance d'entreprise</div>
+          <div  class="button1">Fonctions transverses</div>
+          <div  class="button1">Gestion des opérations</div>  
+          <div  class="button1">Actuariat</div>   -->
+        </div>
+      </div>
+    </div>
+    <div class="field"><span class="fa fa-search" style="color: var(--my-third);font-size: 20px; padding: 15px;"></span>Trouver un emploi
+      <div class="hidden">
+        <h2 style="text-transform: none; width: 100%;">Trouver mon futur emploi</h2>
+        <h3 style="text-transform: none;font-weight: 500;">Quels que soient votre diplôme, votre parcours et vos ambitions, il y a forcément une opportunité pour vous chez BNP Paribas !</h3>
+        <div class="buttons" >
+          <a href="https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/cdi"><div  class="button1">CDI</div></a>
+          <a href="https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/cdd"><div  class="button1">CDD</div></a>
+          <a href="https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/stage"><div  class="button1">Stage</div></a> 
+          <a href="https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/vie"><div  class="button1">VIE</div></a> 
+          <a href="https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/job-etudiant"><div  class="button1">Job étudiant</div></a> 
+          <a href="https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/alternance"><div  class="button1">Alternance</div></a> 
+          <a href="https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/zero-hours"><div  class="button1">Zero Hours</div></a> 
+          <a href="https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/graduate-programme-cdi"><div  class="button1">Graduate Programme (CDI)</div></a> 
+        </div>
+      </div>      
+    </div>
+    <div class="field"><span class="fa fa-upload" style="color: var(--my-third);font-size: 20px; padding: 15px;"></span>Telélecharger mon cv
+      <div class="hidden">
+        <h2 style="text-transform: none; width: 100%;">Trouver mon futur emploi</h2>
+        <h3 style="text-transform: none;font-weight: 500; width: 100%;">Quels que soient votre diplôme, votre parcours et vos ambitions, il y a forcément une opportunité pour vous chez BNP Paribas !</h3>      
+        <a href="https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/graduate-programme-cdi"><div  class="button1" style="padding: 10px; background-color: var(--my-third); color: var(--my-font);">Charger mon cv</div></a> 
+      </div>      
+    </div>
+  </div></div>
+  <div class="fa fa-sort-down" style="font-size: 30px; padding: 15px; left: 50% ;position: relative"></div>
+</div>
+</div>
+</body>

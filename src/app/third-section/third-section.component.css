@@ -1,0 +1,94 @@
+body{
+    background-image: radial-gradient(circle at 100% 100%, rgba(255, 199, 0, 0.15) 0px, rgba(3, 167, 118, 0.06) 20%, rgba(255, 199, 0, 0) 29%), radial-gradient(circle at 11% 101%, rgba(233, 163, 199, 0.3) 0px, rgba(245, 129, 80, 0.05) 24%, rgba(246, 126, 70, 0) 32%), linear-gradient(rgba(241, 243, 244, 0) 0px, rgba(241, 243, 244, 0.5));
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    
+}
+#back-img{
+    margin-left: 50%;
+    right: 10px;
+    width: 44%;
+    height: auto;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.goal{
+    display: flex;
+    border-radius: 10px;
+    box-shadow:  rgba(53, 43, 53, 0.1) 0px 10px 30px 10px;
+    background-color: var(--my-font);
+    margin-bottom: 20px;
+    background-image: radial-gradient(circle at 10% 100%, rgb(184, 48, 118) 9%, rgb(217, 112, 63) 70%, rgb(217, 146, 63) 100%);
+
+}
+.goal:hover .goal-showed{
+    transition: 1s;
+    margin-bottom: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.goal-showed{
+    padding: 50px;
+    justify-content: space-between;
+    display: flex;flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--my-font);
+    border-radius: 10px;
+}
+.goal-hidden{
+    display: none;
+}
+.goal:hover .goal-hidden{
+    transition: 0.4s;
+    margin-top: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-size: large;
+}
+#main{
+    width: 100%;
+    /* height: 800px; */
+    position: relative;
+    margin-bottom: 50px;
+}
+#goals{
+    text-align: start;
+    width: 50%;
+    position: absolute;
+    top: 0px;
+    padding-left: 10%;
+    font-size: 20px;
+    font-weight: 600;
+    height: 100%;
+}
+button{
+    padding: 10px;
+    border-radius: 30px;
+    background-color: var(--my-second);
+    color: var(--my-font);
+    font-size: 10px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: transparent;
+    color: var(--my-second);
+}
+.card{
+    background-color: var(--my-font);
+   margin: auto;
+   width: 70%;
+   display: flex; 
+   padding: 20px;
+   border-radius: 15px;
+   box-shadow: rgba(53, 43, 53, 0.1) 0px 10px 30px 10px;
+}
+h1{
+    margin: auto;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}

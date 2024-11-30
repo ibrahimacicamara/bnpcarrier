@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+body { margin: 0; padding: auto;
+    font-family: Roboto, "francois one", sans-serif;
+ }
+ :root{
+   --my-font:rgb(255, 255, 255);
+   --my-color:rgb(3, 167, 118);
+   --my-second:rgb(13, 21, 25);
+   --my-third:rgb(184, 48, 118);
+
+ }
